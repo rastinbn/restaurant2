@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.popular-image-hover:hover {
+    transform: scale(1.1);
+    transition: transform 1s;
+    
+}
+.popular-image-hover:hover >img{
+    filter: brightness(0.5);
+}
+.popular-image-hover:hover .text-hover{
+    z-index: 1;
+}
+.finest-header{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+.owl-carousel{
+    display: block;
+}
+::-webkit-scrollbar {
+    width: 9px;
+    
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+

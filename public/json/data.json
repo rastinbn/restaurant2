@@ -1,0 +1,184 @@
+[
+    {
+        "name": "pizza",
+        "price": 10,
+        "description": "This is a delicious pizza with a crispy crust, topped with fresh ingredients and melted cheese.",
+        "popular": true,
+        "category": "food",
+        "image": "https://foodish-api.com/images/pizza/pizza22.jpg"
+    },
+    {
+        "name": "burger",
+        "price": 5,
+        "description": "This is a juicy burger made with a tender beef patty, fresh lettuce, tomatoes, and a soft bun.",
+        "popular": false,
+        "image": "https://foodish-api.com/images/burger/burger52.jpg"
+    },
+    {
+        "name": "pasta",
+        "price": 8,
+        "description": "This is a pasta dish featuring al dente noodles, rich tomato sauce, and a blend of Italian herbs.",
+        "popular": true,
+        "image": "https://foodish-api.com/images/pasta/pasta3.jpg"
+    },
+    {
+        "name": "sandwich",
+        "price": 6,
+        "description": "This is a sandwich filled with fresh vegetables, savory meats, and a variety of condiments.",
+        "popular": false,
+        "image": "https://foodish-api.com/images/burger/burger56.jpg"
+    },
+    {
+        "name": "burger",
+        "price": 4,
+        "description": "This is a classic burger with a flavorful beef patty, melted cheese, and a toasted bun.",
+        "popular": true,
+        "image": "https://foodish-api.com/images/burger/burger32.jpg"
+    },
+    {
+        "name": "desert",
+        "price": 3,
+        "description": "This is a sweet dessert that is perfect for satisfying your sweet tooth, with a variety of flavors and textures.",
+        "popular": true,
+        "image": "https://foodish-api.com/images/dessert/dessert10.jpg"
+    }
+    ,
+    {
+        "name": "butter chicken",
+        "price": 12,
+        "description": "This is a rich and creamy butter chicken made with tender chicken pieces in a spiced tomato sauce.",
+        "popular": true,
+        "category": "food",
+        "image": "https://foodish-api.com/images/butter-chicken/butter-chicken4.jpg"
+    },
+    {
+        "name": "butter chicken",
+        "price": 13,
+        "description": "A flavorful butter chicken dish with a perfect blend of spices and creamy sauce.",
+        "popular": false,
+        "category": "food",
+        "image": "https://foodish-api.com/images/butter-chicken/butter-chicken3.jpg"
+    },
+    {
+        "name": "butter chicken",
+        "price": 14,
+        "description": "Delicious butter chicken served with a side of naan bread.",
+        "popular": true,
+        "category": "food",
+        "image": "https://foodish-api.com/images/butter-chicken/butter-chicken4.jpg"
+    },
+    {
+        "name": "butter chicken",
+        "price": 15,
+        "description": "A classic butter chicken recipe with a rich and creamy sauce.",
+        "popular": false,
+        "category": "food",
+        "image": "https://foodish-api.com/images/butter-chicken/butter-chicken7.jpg"
+    },
+    {
+        "name": "butter chicken",
+        "price": 16,
+        "description": "Butter chicken with a perfect balance of spices and creaminess.",
+        "popular": true,
+        "category": "food",
+        "image": "https://foodish-api.com/images/butter-chicken/butter-chicken6.jpg"
+    },
+    {
+        "name": "pizza",
+        "price": 11,
+        "description": "A delicious pizza with a variety of toppings and a crispy crust.",
+        "popular": true,
+        "category": "food",
+        "image": "https://foodish-api.com/images/pizza/pizza23.jpg"
+    },
+    {
+        "name": "pizza",
+        "price": 12,
+        "description": "Pizza topped with fresh ingredients and melted cheese.",
+        "popular": false,
+        "category": "food",
+        "image": "https://foodish-api.com/images/pizza/pizza24.jpg"
+    },
+    {
+        "name": "pizza",
+        "price": 13,
+        "description": "A classic pizza with a perfect blend of flavors.",
+        "popular": true,
+        "category": "food",
+        "image": "https://foodish-api.com/images/pizza/pizza25.jpg"
+    },
+    {
+        "name": "burger",
+        "price": 6,
+        "description": "A juicy burger with fresh lettuce, tomatoes, and a soft bun.",
+        "popular": true,
+        "category": "food",
+        "image": "https://foodish-api.com/images/burger/burger53.jpg"
+    },
+    {
+        "name": "burger",
+        "price": 7,
+        "description": "A classic burger with a flavorful beef patty and melted cheese.",
+        "popular": false,
+        "category": "food",
+        "image": "https://foodish-api.com/images/burger/burger54.jpg"
+    },
+    {
+        "name": "burger",
+        "price": 8,
+        "description": "A delicious burger with a variety of toppings.",
+        "popular": true,
+        "category": "food",
+        "image": "https://foodish-api.com/images/burger/burger55.jpg"
+    },
+    {
+        "name": "pasta",
+        "price": 9,
+        "description": "A pasta dish with al dente noodles and rich tomato sauce.",
+        "popular": true,
+        "category": "food",
+        "image": "https://foodish-api.com/images/pasta/pasta4.jpg"
+    },
+    {
+        "name": "pasta",
+        "price": 10,
+        "description": "Pasta with a blend of Italian herbs and a rich sauce.",
+        "popular": false,
+        "category": "food",
+        "image": "https://foodish-api.com/images/pasta/pasta5.jpg"
+    },
+    {
+        "name": "pasta",
+        "price": 11,
+        "description": "A delicious pasta dish with a variety of flavors.",
+        "popular": true,
+        "category": "food",
+        "image": "https://foodish-api.com/images/pasta/pasta6.jpg"
+    },
+    {
+        "name": "dessert",
+        "price": 4,
+        "description": "A sweet dessert with a variety of flavors and textures.",
+        "popular": true,
+        "category": "food",
+        "image": "https://foodish-api.com/images/dessert/dessert11.jpg"
+    },
+    {
+        "name": "dessert",
+        "price": 5,
+        "description": "A delicious dessert perfect for satisfying your sweet tooth.",
+        "popular": false,
+        "category": "food",
+        "image": "https://foodish-api.com/images/dessert/dessert12.jpg"
+    },
+    {
+        "name": "dessert",
+        "price": 6,
+        "description": "A classic dessert with a perfect blend of flavors.",
+        "popular": true,
+        "category": "food",
+        "image": "https://foodish-api.com/images/dessert/dessert13.jpg"
+    }
+
+
+]
