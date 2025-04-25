@@ -9,7 +9,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     $stmt = $conn->prepare($insertuser);
     $stmt->bind_param("sss", $name, $email, $password);
     if($stmt->execute()){
-        echo "<p class='text-green-500 absolute left-[40%] top-0'>User registered successfully!</p>";
+        echo "<p class='text-green-500 absolute left-[45%] top-0'>User registered successfully!</p>";
         $stmt->close();
     $conn->close();
     }else{

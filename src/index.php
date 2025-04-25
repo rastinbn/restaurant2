@@ -11,7 +11,7 @@ if (mysqli_num_rows($resualt) > 0) {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="animate__animated animate__fadeIn"></html>
 
 <head>
   <meta charset="UTF-8" />

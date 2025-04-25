@@ -1,4 +1,12 @@
 <?php
+require "php/db.php";
+$products = "SELECT * FROM `menus` WHERE 1";
+$resualt = mysqli_query($conn, $products);
+if (mysqli_num_rows($resualt) > 0) {
+    $products = mysqli_fetch_all($resualt , MYSQLI_ASSOC);
+}else{
+      $products = [];
+   }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -6,11 +14,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="js/browser@4.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- CSS Dependencies -->
+    <link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../src/css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
-<body class="dark:bg-gray-950">
+<body >
     
 <button data-drawer-target="sidebar-multi-level-sidebar" data-drawer-toggle="sidebar-multi-level-sidebar" aria-controls="sidebar-multi-level-sidebar" type="button" class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
    <span class="sr-only">Open sidebar</span>
@@ -18,8 +30,8 @@
    <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
    </svg>
 </button>
-
-<aside id="sidebar-multi-level-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+<div class="flex flex-row gap-5">
+<aside id="sidebar-multi-level-sidebar" class=" z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
    <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
       <ul class="space-y-2 font-medium">
          <li>
@@ -41,9 +53,9 @@
                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                   </svg>
             </button>
-            <ul id="dropdown-example" class="hidden py-2 space-y-2">
-                  <li>
-                     <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Products</a>
+            <ul  class="hidden py-2 space-y-2">
+                  <li id="productbutton">
+                     <a href="#"  class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Products</a>
                   </li>
                   <li>
                      <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Billing</a>
@@ -77,9 +89,53 @@
       </ul>
    </div>
 </aside>
+<div class="hidden" id="products">
+    <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Products</h1>
+    <div class="relative">
+        <div class="overflow-x-auto pb-4">
+            <div class="flex space-x-6 w-[1300px]" >
+                <?php foreach ($products as $product): ?>
+                <div class="w-72 flex-shrink-0 bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <div class="relative h-48">
+                        <img 
+                            src="<?php echo $product['imageurl']; ?>" 
+                            alt="<?php echo $product['name']; ?>"
+                            class="w-full h-full object-cover"
+                        />
+                        <div class="absolute top-2 right-2">
+                            <span class="bg-primary-500 text-white px-3 py-1 rounded-full text-sm">
+                                $<?php echo $product['price']; ?>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                            <?php echo $product['name']; ?>
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                            <?php echo $product['description']; ?>
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <button class="btn-primary">
+                                <i class="fa fa-edit mr-2"></i>Edit
+                            </button>
+                            <button class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors">
+                                <i class="fa fa-trash mr-2"></i>Delete
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <!-- JavaScript Dependencies -->
+    <script src="../src/js/jquery-3.6.0.min.js"></script>
+    <script src="../src/js/Slider/owl.carousel.min.js"></script>
+    <script src="../src/js/admin.js"></script>
+    <script src="../src/js/browser@4.js"></script>
 
-
-
-   <script src="js/admin.js"></script>
 </body>
 </html>
